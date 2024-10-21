@@ -153,3 +153,80 @@ footer p:hover {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
     transition: text-shadow 0.3s ease;
 }
+
+#delivery {
+    background: linear-gradient(135deg, #f5f5f5 0%, #dfe9f3 100%);
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 60px auto;
+    max-width: 1200px;
+}
+
+#delivery h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    position: relative;
+}
+
+#delivery p {
+    font-size: 1.5em;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.delivery-info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.delivery-info strong {
+    color: #e74c3c;
+}
+
+.delivery-options {
+    margin-top: 30px;
+}
+
+.delivery-btn {
+    display: inline-block;
+    margin: 15px 10px;
+    padding: 15px 25px;
+    background: #27ae60;
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delivery-btn:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+.delivery-btn:first-child {
+    background-color: #25d366; 
+}
+
+.delivery-btn:first-child:hover {
+    background-color: #1bc659;
+}
+
+.delivery-btn:nth-child(2) {
+    background-color: #e74c3c; 
+}
+
+.delivery-btn:nth-child(2):hover {
+    background-color: #ff5f6d;
+}
+
+.delivery-btn:nth-child(3) {
+    background-color: #3498db; 
+}
+
+.delivery-btn:nth-child(3):hover {
+    background-color: #2980b9;
+}
