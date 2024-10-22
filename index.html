@@ -17,6 +17,7 @@
                 <li><a href="#delivery">Delivery</a></li>
             </ul>
         </nav>
+        <button id="dark-mode-toggle" class="dark-mode-btn">Modo Escuro</button>
     </header>
 
     <section id="pratos-principais">
@@ -136,3 +137,20 @@
     <footer>
         <p>&copy; 2024 Restaurante Nathan Delícia. Todos os direitos reservados.</p>
     </footer>
+    
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', function() {
+            body.classList.toggle('dark-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                toggleButton.textContent = 'Modo Claro';
+            } else {
+                toggleButton.textContent = 'Modo Escuro';
+            }
+        });
+    </script>
+</body>
+</html>
