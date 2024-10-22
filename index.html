@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio de Comida</title>
+    <title>Restaurante Delícia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,82 +12,61 @@
         <nav>
             <ul>
                 <li><a href="#pratos-principais">Pratos Principais</a></li>
-                <li><a href="#bebidas">Bebidas</a></li>
                 <li><a href="#sobremesas">Sobremesas</a></li>
+                <li><a href="#delivery">Delivery</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="pratos-principais">
         <h2>Pratos Principais</h2>
-        <div class="item">
+        <div class="item" onclick="mostrarDetalhe('feijoada')">
             <h3>Feijoada Completa</h3>
             <p class="descricao">Uma deliciosa feijoada tradicional, acompanhada de arroz, farofa e laranja.</p>
             <p class="preco">R$ 35,00</p>
         </div>
 
-        <div class="item">
+        <div class="item" onclick="mostrarDetalhe('parmegiana')">
             <h3>Frango à Parmegiana</h3>
             <p class="descricao">Frango empanado com molho de tomate e queijo derretido, acompanhado de arroz e batata frita.</p>
             <p class="preco">R$ 28,00</p>
         </div>
 
-        <div class="item">
+        <div class="item" onclick="mostrarDetalhe('moqueca')">
             <h3>Moqueca de Peixe</h3>
             <p class="descricao">Moqueca de peixe preparada com leite de coco, azeite de dendê e pimentões.</p>
             <p class="preco">R$ 45,00</p>
         </div>
     </section>
 
-    <section id="bebidas">
-        <h2>Bebidas</h2>
-        <div class="item">
-            <h3>Suco de Laranja</h3>
-            <p class="descricao">Suco natural de laranja fresco.</p>
-            <p class="preco">R$ 8,00</p>
-        </div>
-
-        <div class="item">
-            <h3>Coca-Cola</h3>
-            <p class="descricao">Lata de refrigerante Coca-Cola gelada.</p>
-            <p class="preco">R$ 6,00</p>
-        </div>
-
-        <div class="item">
-            <h3>Cerveja Artesanal</h3>
-            <p class="descricao">Cerveja artesanal local, perfeita para acompanhar seu prato.</p>
-            <p class="preco">R$ 12,00</p>
-        </div>
-    </section>
-
     <section id="sobremesas">
         <h2>Sobremesas</h2>
-        <div class="item">
-            <h3>Pudim de Leite Condensado</h3>
-            <p class="descricao">Pudim cremoso de leite condensado com calda de caramelo.</p>
-            <p class="preco">R$ 10,00</p>
-        </div>
-
-        <div class="item">
-            <h3>Brownie com Sorvete</h3>
-            <p class="descricao">Brownie de chocolate servido com uma bola de sorvete de creme.</p>
-            <p class="preco">R$ 15,00</p>
-        </div>
-
-        <div class="item">
-            <h3>Torta de Limão</h3>
-            <p class="descricao">Torta de limão com massa crocante e cobertura de merengue.</p>
+        <div class="item" onclick="mostrarDetalhe('pudim')">
+            <h3>Pudim de Leite</h3>
+            <p class="descricao">O tradicional pudim de leite condensado, com calda de caramelo.</p>
             <p class="preco">R$ 12,00</p>
         </div>
+
+        <div class="item" onclick="mostrarDetalhe('tiramisu')">
+            <h3>Tiramisu</h3>
+            <p class="descricao">Delicioso tiramisu com camadas de mascarpone e café, polvilhado com cacau.</p>
+            <p class="preco">R$ 18,00</p>
+        </div>
+
+        <div class="item" onclick="mostrarDetalhe('sorvete')">
+            <h3>Sorvete Artesanal</h3>
+            <p class="descricao">Sorvete cremoso, feito artesanalmente com os melhores ingredientes.</p>
+            <p class="preco">R$ 10,00</p>
+        </div>
     </section>
-    
+
     <section id="delivery">
         <h2>Delivery</h2>
         <div class="delivery-info">
             <p>Agora você pode saborear nossos pratos no conforto da sua casa! Oferecemos entrega rápida para sua conveniência.</p>
             <p>Horário de funcionamento do Delivery: <strong>11:00 - 22:00</strong></p>
             <p>Peça agora mesmo pelo WhatsApp ou em uma das plataformas de delivery!</p>
-    
+
             <div class="delivery-options">
                 <a href="https://wa.me/seunumerodetelefone" class="delivery-btn">Peça pelo WhatsApp</a>
                 <a href="#" class="delivery-btn">Peça pelo iFood</a>
@@ -95,10 +74,60 @@
             </div>
         </div>
     </section>
-    
+
+    <section id="detalhe-prato">
+        <h2>Detalhe do Prato</h2>
+        <div id="conteudo-detalhe">
+            <p>Clique em um prato para ver os detalhes aqui!</p>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Restaurante Nathan Delícia. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Restaurante Delícia. Todos os direitos reservados.</p>
     </footer>
 
+    <script>
+        function mostrarDetalhe(prato) {
+            let conteudoDetalhe = document.getElementById('conteudo-detalhe');
+
+            if (prato === 'feijoada') {
+                conteudoDetalhe.innerHTML = `
+                    <h3>Feijoada Completa</h3>
+                    <p>A feijoada completa é um prato clássico da culinária brasileira, preparada com feijão preto, carnes salgadas e embutidos. Acompanhada de arroz branco, farofa crocante e fatias de laranja.</p>
+                    <p><strong>Preço: R$ 35,00</strong></p>
+                `;
+            } else if (prato === 'parmegiana') {
+                conteudoDetalhe.innerHTML = `
+                    <h3>Frango à Parmegiana</h3>
+                    <p>Frango empanado com molho de tomate e queijo derretido, acompanhado de arroz e batata frita. Um clássico dos restaurantes brasileiros.</p>
+                    <p><strong>Preço: R$ 28,00</strong></p>
+                `;
+            } else if (prato === 'moqueca') {
+                conteudoDetalhe.innerHTML = `
+                    <h3>Moqueca de Peixe</h3>
+                    <p>Uma moqueca deliciosa, preparada com peixe fresco, leite de coco, azeite de dendê e pimentões. Um sabor incrível que vai te transportar para o litoral.</p>
+                    <p><strong>Preço: R$ 45,00</strong></p>
+                `;
+            } else if (prato === 'pudim') {
+                conteudoDetalhe.innerHTML = `
+                    <h3>Pudim de Leite</h3>
+                    <p>O tradicional pudim de leite condensado, com calda de caramelo.</p>
+                    <p><strong>Preço: R$ 12,00</strong></p>
+                `;
+            } else if (prato === 'tiramisu') {
+                conteudoDetalhe.innerHTML = `
+                    <h3>Tiramisu</h3>
+                    <p>Delicioso tiramisu com camadas de mascarpone e café, polvilhado com cacau.</p>
+                    <p><strong>Preço: R$ 18,00</strong></p>
+                `;
+            } else if (prato === 'sorvete') {
+                conteudoDetalhe.innerHTML = `
+                    <h3>Sorvete Artesanal</h3>
+                    <p>Sorvete cremoso, feito artesanalmente com os melhores ingredientes.</p>
+                    <p><strong>Preço: R$ 10,00</strong></p>
+                `;
+            }
+        }
+    </script>
 </body>
 </html>
