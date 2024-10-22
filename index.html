@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Delícia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -13,6 +13,7 @@
             <ul>
                 <li><a href="#pratos-principais">Pratos Principais</a></li>
                 <li><a href="#sobremesas">Sobremesas</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
                 <li><a href="#delivery">Delivery</a></li>
             </ul>
         </nav>
@@ -20,114 +21,118 @@
 
     <section id="pratos-principais">
         <h2>Pratos Principais</h2>
-        <div class="item" onclick="window.location.href='https://youtu.be/FgXYzF5-Yiw?si=2lxyEg25IxZ8xROZ'">
+
+        <div class="item" onclick="mostrarDetalhe('feijoada')">
             <h3>Feijoada Completa</h3>
-            <p class="descricao">Uma deliciosa feijoada tradicional, acompanhada de arroz, farofa e laranja.</p>
+            <p class="descricao">Feijoada tradicional com arroz, farofa e laranja.</p>
             <p class="preco">R$ 35,00</p>
         </div>
 
-        <div class="item" onclick="window.location.href='https://youtu.be/FgXYzF5-Yiw?si=2lxyEg25IxZ8xROZ'">
+        <div class="item" onclick="mostrarDetalhe('parmegiana')">
             <h3>Frango à Parmegiana</h3>
-            <p class="descricao">Frango empanado com molho de tomate e queijo derretido, acompanhado de arroz e batata frita.</p>
+            <p class="descricao">Frango empanado com molho de tomate e queijo, acompanhado de arroz e fritas.</p>
             <p class="preco">R$ 28,00</p>
         </div>
 
-        <div class="item" onclick="window.location.href='https://youtu.be/FgXYzF5-Yiw?si=2lxyEg25IxZ8xROZ'">
+        <div class="item" onclick="mostrarDetalhe('moqueca')">
             <h3>Moqueca de Peixe</h3>
-            <p class="descricao">Moqueca de peixe preparada com leite de coco, azeite de dendê e pimentões.</p>
+            <p class="descricao">Peixe com leite de coco, azeite de dendê e pimentões.</p>
             <p class="preco">R$ 45,00</p>
+        </div>
+
+        <div class="item" onclick="mostrarDetalhe('picanha')">
+            <h3>Picanha Grelhada</h3>
+            <p class="descricao">Picanha grelhada com arroz, farofa e vinagrete.</p>
+            <p class="preco">R$ 50,00</p>
+        </div>
+
+        <div class="item" onclick="mostrarDetalhe('spaghetti')">
+            <h3>Spaghetti Carbonara</h3>
+            <p class="descricao">Massa italiana com molho à base de ovos, queijo e bacon.</p>
+            <p class="preco">R$ 30,00</p>
         </div>
     </section>
 
     <section id="sobremesas">
         <h2>Sobremesas</h2>
-        <div class="item" onclick="window.location.href='https://youtu.be/FgXYzF5-Yiw?si=2lxyEg25IxZ8xROZ'">
+
+        <div class="item" onclick="mostrarDetalhe('pudim')">
             <h3>Pudim de Leite</h3>
-            <p class="descricao">O tradicional pudim de leite condensado, com calda de caramelo.</p>
+            <p class="descricao">Clássico pudim com calda de caramelo.</p>
             <p class="preco">R$ 12,00</p>
         </div>
 
-        <div class="item" onclick="window.location.href='https://youtu.be/FgXYzF5-Yiw?si=2lxyEg25IxZ8xROZ'">
+        <div class="item" onclick="mostrarDetalhe('brownie')">
+            <h3>Brownie de Chocolate</h3>
+            <p class="descricao">Brownie com sorvete de baunilha.</p>
+            <p class="preco">R$ 15,00</p>
+        </div>
+
+        <div class="item" onclick="mostrarDetalhe('mousse')">
+            <h3>Mousse de Maracujá</h3>
+            <p class="descricao">Sobremesa leve com calda de maracujá.</p>
+            <p class="preco">R$ 10,00</p>
+        </div>
+
+        <div class="item" onclick="mostrarDetalhe('tiramisu')">
             <h3>Tiramisu</h3>
-            <p class="descricao">Delicioso tiramisu com camadas de mascarpone e café, polvilhado com cacau.</p>
+            <p class="descricao">Sobremesa italiana à base de café, mascarpone e cacau.</p>
             <p class="preco">R$ 18,00</p>
         </div>
 
-        <div class="item" onclick="window.location.href='https://youtu.be/FgXYzF5-Yiw?si=2lxyEg25IxZ8xROZ'">
-            <h3>Sorvete Artesanal</h3>
-            <p class="descricao">Sorvete cremoso, feito artesanalmente com os melhores ingredientes.</p>
+        <div class="item" onclick="mostrarDetalhe('cheesecake')">
+            <h3>Cheesecake de Frutas Vermelhas</h3>
+            <p class="descricao">Cheesecake com cobertura de frutas vermelhas.</p>
+            <p class="preco">R$ 20,00</p>
+        </div>
+    </section>
+
+    <section id="bebidas">
+        <h2>Bebidas</h2>
+
+        <div class="item" onclick="mostrarDetalhe('coca-cola')">
+            <h3>Coca-Cola Lata</h3>
+            <p class="descricao">Lata de 350ml.</p>
+            <p class="preco">R$ 5,00</p>
+        </div>
+
+        <div class="item" onclick="mostrarDetalhe('suco-laranja')">
+            <h3>Suco de Laranja Natural</h3>
+            <p class="descricao">Copo de 300ml, feito com laranjas frescas.</p>
+            <p class="preco">R$ 8,00</p>
+        </div>
+
+        <div class="item" onclick="mostrarDetalhe('caipirinha')">
+            <h3>Caipirinha</h3>
+            <p class="descricao">Tradicional caipirinha de limão com cachaça.</p>
+            <p class="preco">R$ 15,00</p>
+        </div>
+
+        <div class="item" onclick="mostrarDetalhe('cerveja')">
+            <h3>Cerveja Heineken Long Neck</h3>
+            <p class="descricao">Garrafa de 355ml.</p>
             <p class="preco">R$ 10,00</p>
+        </div>
+
+        <div class="item" onclick="mostrarDetalhe('vinho')">
+            <h3>Taça de Vinho Tinto</h3>
+            <p class="descricao">Vinho tinto seco, 150ml.</p>
+            <p class="preco">R$ 25,00</p>
         </div>
     </section>
 
     <section id="delivery">
         <h2>Delivery</h2>
         <div class="delivery-info">
-            <p>Agora você pode saborear nossos pratos no conforto da sua casa! Oferecemos entrega rápida para sua conveniência.</p>
-            <p>Horário de funcionamento do Delivery: <strong>11:00 - 22:00</strong></p>
-            <p>Peça agora mesmo pelo WhatsApp ou em uma das plataformas de delivery!</p>
-
+            <p>Peça agora e receba em casa! Serviço de entrega rápida e eficiente.</p>
             <div class="delivery-options">
-                <a href="https://wa.me/seunumerodetelefone" class="delivery-btn">Peça pelo WhatsApp</a>
-                <a href="#" class="delivery-btn">Peça pelo iFood</a>
-                <a href="#" class="delivery-btn">Peça pelo UberEats</a>
+                <a href="https://api.whatsapp.com/send?phone=559999999999" class="delivery-btn" target="_blank">Pedir pelo WhatsApp</a>
+                <a href="https://www.ifood.com.br/" class="delivery-btn" target="_blank">Pedir pelo iFood</a>
+                <a href="https://www.ubereats.com/" class="delivery-btn" target="_blank">Pedir pelo UberEats</a>
             </div>
         </div>
     </section>
 
-    <section id="detalhe-prato">
-        <h2>Detalhe do Prato</h2>
-        <div id="conteudo-detalhe">
-            <p>Clique em um prato para ver os detalhes aqui!</p>
-        </div>
-    </section>
-
     <footer>
-        <p>&copy; 2024 Restaurante Delícia. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Restaurante Nathan Delícia. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        function mostrarDetalhe(prato) {
-            let conteudoDetalhe = document.getElementById('conteudo-detalhe');
-
-            if (prato === 'feijoada') {
-                conteudoDetalhe.innerHTML = `
-                    <h3>Feijoada Completa</h3>
-                    <p>A feijoada completa é um prato clássico da culinária brasileira, preparada com feijão preto, carnes salgadas e embutidos. Acompanhada de arroz branco, farofa crocante e fatias de laranja.</p>
-                    <p><strong>Preço: R$ 35,00</strong></p>
-                `;
-            } else if (prato === 'parmegiana') {
-                conteudoDetalhe.innerHTML = `
-                    <h3>Frango à Parmegiana</h3>
-                    <p>Frango empanado com molho de tomate e queijo derretido, acompanhado de arroz e batata frita. Um clássico dos restaurantes brasileiros.</p>
-                    <p><strong>Preço: R$ 28,00</strong></p>
-                `;
-            } else if (prato === 'moqueca') {
-                conteudoDetalhe.innerHTML = `
-                    <h3>Moqueca de Peixe</h3>
-                    <p>Uma moqueca deliciosa, preparada com peixe fresco, leite de coco, azeite de dendê e pimentões. Um sabor incrível que vai te transportar para o litoral.</p>
-                    <p><strong>Preço: R$ 45,00</strong></p>
-                `;
-            } else if (prato === 'pudim') {
-                conteudoDetalhe.innerHTML = `
-                    <h3>Pudim de Leite</h3>
-                    <p>O tradicional pudim de leite condensado, com calda de caramelo.</p>
-                    <p><strong>Preço: R$ 12,00</strong></p>
-                `;
-            } else if (prato === 'tiramisu') {
-                conteudoDetalhe.innerHTML = `
-                    <h3>Tiramisu</h3>
-                    <p>Delicioso tiramisu com camadas de mascarpone e café, polvilhado com cacau.</p>
-                    <p><strong>Preço: R$ 18,00</strong></p>
-                `;
-            } else if (prato === 'sorvete') {
-                conteudoDetalhe.innerHTML = `
-                    <h3>Sorvete Artesanal</h3>
-                    <p>Sorvete cremoso, feito artesanalmente com os melhores ingredientes.</p>
-                    <p><strong>Preço: R$ 10,00</strong></p>
-                `;
-            }
-        }
-    </script>
-</body>
-</html>
