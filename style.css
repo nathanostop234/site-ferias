@@ -8,11 +8,11 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, #ff5722, #ff9800); 
+    background: linear-gradient(90deg, #ff5722, #ff9800);
     color: white;
     padding: 30px 0;
     text-align: center;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -23,7 +23,7 @@ header h1 {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
-    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); 
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
@@ -44,22 +44,22 @@ nav ul li a {
     font-weight: bold;
     text-transform: uppercase;
     transition: color 0.3s ease, border-bottom 0.3s ease;
-    border-bottom: 3px solid transparent; 
+    border-bottom: 3px solid transparent;
 }
 
 nav ul li a:hover {
-    color: #ffd54f; 
-    border-bottom: 3px solid #ffd54f; 
+    color: #ffd54f;
+    border-bottom: 3px solid #ffd54f;
 }
 
-#pratos-principais, #sobremesas {
+#pratos-principais, #sobremesas, #bebidas {
     padding: 50px 20px;
     text-align: center;
     background-color: #ffffff;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     border-radius: 20px;
-    animation: fadeInUp 1s ease; 
+    animation: fadeInUp 1s ease;
 }
 
 h2 {
@@ -67,7 +67,7 @@ h2 {
     color: #ff5722;
     text-transform: uppercase;
     margin-bottom: 40px;
-    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1); 
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -81,7 +81,7 @@ h2::after {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .item {
@@ -91,7 +91,7 @@ h2::after {
     padding: 20px;
     margin: 20px;
     width: 250px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -99,9 +99,9 @@ h2::after {
 }
 
 .item:hover {
-    transform: translateY(-15px) rotate(1deg); 
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); 
-    border-color: #ffffff; 
+    transform: translateY(-15px) rotate(1deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    border-color: #ffffff;
 }
 
 .item h3 {
@@ -115,14 +115,14 @@ h2::after {
 }
 
 #delivery {
-    background: linear-gradient(90deg, #f44336, #e91e63); 
+    background: linear-gradient(90deg, #f44336, #e91e63);
     padding: 60px 20px;
     text-align: center;
     color: white;
     border-radius: 20px;
     margin: 20px auto;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    animation: fadeInRight 1s ease; 
+    animation: fadeInRight 1s ease;
 }
 
 .delivery-info p {
@@ -146,39 +146,14 @@ h2::after {
     font-size: 1.4em;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .delivery-btn:hover {
     background-color: #ff9800;
     color: white;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); 
-    transform: translateY(-5px); 
-}
-
-#detalhe-prato {
-    background-color: #ffeb3b; 
-    padding: 50px;
-    margin: 50px auto;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    max-width: 900px;
-    text-align: center;
-    animation: fadeInLeft 1s ease; 
-}
-
-#detalhe-prato h2 {
-    font-size: 2.5em;
-    margin-bottom: 25px;
-    color: #c62828;
-    text-transform: uppercase;
-}
-
-#conteudo-detalhe {
-    font-size: 1.8em;
-    color: #424242;
-    line-height: 1.6;
-    font-weight: bold;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px);
 }
 
 footer {
@@ -187,7 +162,7 @@ footer {
     padding: 30px;
     text-align: center;
     margin-top: 40px;
-    box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.2);
 }
 
 footer p {
@@ -209,17 +184,6 @@ footer p {
     from {
         opacity: 0;
         transform: translateX(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
     }
     to {
         opacity: 1;
